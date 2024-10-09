@@ -1,38 +1,221 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+  --main-color: #1A9F40;
+  --secondary-color: #E1903B;
+  --tertiary-color: #2034a6;
+}
+
+
+body{
+  font-family: "Bebas Neue", sans-serif;
+  background-color: var(--main-color);
+}
+
+.nav{
+  position: sticky;
+  top: 0;
+  background-color: var(--main-color);
+  border-color: var(--secondary-color);
+  border-style: solid;
+  border-width: 3px;
+  color: whitesmoke;
+  display: flex;
+  justify-content:space-evenly;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+}
+
+#logo{
+  height:100px;
+  width: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+#nav_title{
+  display: flex;
+  align-items: center;
+  text-decoration:none;
+  font-style:normal;
+  font-size: 4rem;
+  color: var(--secondary-color);
+  text-shadow:1px 1px var(--tertiary-color);
+}
+
+#nav_title:hover{
+  margin-bottom: 20px;
+  border-bottom: 2px var(--secondary-color);
+  border-style: none none solid none;
+}
+
+.nav_links{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2rem;
+  gap: 1rem;
+}
+
+.navLink{
+  color: var(--secondary-color);
+  text-decoration: none!important;
+  text-shadow:.5px .5px var(--tertiary-color);
+}
+
+.nanLink:hover{
+  margin-bottom: 20px;
+  border-bottom: 2px var(--secondary-color);
+  border-style: none none solid none;
+}
+
+.home_screen{
+  background-color: var(--main-color);
+}
+
+#org_field{
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+
+.home_button{
+  background-color:var(--main-color);
+  color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.home_button:hover{
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+#home_img_center{
+  position: absolute;
+  left:50%;
+  top:70%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#homeImgTitle{
+  color:var(--main-color);
+  font-size: 70px;
+  text-shadow:2px 1px var(--secondary-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#homeImgTxt{
+  color: var(--main-color);
+  font-size: 50px;
+  text-shadow:2px 1px var(--secondary-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home_btn_block{
+  display: flex;
+  justify-content:center;
+
+}
+
+.home_button{
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px
+}
+
+.home-vidContainer{
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+
+.homeVid_block{
+  position: absolute;
+  left: 50%;
+  top: 210%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#homeVid_title{
+  color:var(--main-color);
+  font-size: 70px;
+  text-shadow:2px 1px var(--secondary-color);
+}
+
+.films_page{
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.film1Window{
+  width: 100%;
+  height: auto;
+  margin: 3rem;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+.filmTitle{
+  color: var(--tertiary-color);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-shadow:2px 2px var(--main-color);
 }
 
-.App-link {
-  color: #61dafb;
+.film1Window iframe{
+  position: relative;
+  height: 500px;
+  width:66%;
+  left:16.5%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game_page{
+
+}
+
+.game1Window{
+  background-color: var(--secondary-color);
+
+}
+
+.gameTitle{
+  color: var(--tertiary-color);
+  display: flex;
+  justify-content: center;
+  text-shadow:2px 2px var(--main-color);
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contactTitle{
+  color: var(--tertiary-color);
+  display: flex;
+  justify-content: center;
+  text-shadow:2px 2px var(--main-color);
+}
+
+#contact_form_container{
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
 }
